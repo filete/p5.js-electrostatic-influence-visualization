@@ -100,14 +100,6 @@ result_tab.pages[1].addInput(PARAMS, 'particle_index', {
   },
 });
 
-result_tab.pages[0].addMonitor(PARAMS, 'particle_index', {
-  view: 'graph',
-  label: 'idk',
-  min:0,
-  max: 5,
-  interval: 100,  // update every 100 milliseconds
-});
-
 pane.addSeparator();
 
 const particle_folder = pane.addFolder({
@@ -142,6 +134,13 @@ function setup() {
   for(let i = 0; i < num; i++){
     particle[i] = new Particle(i);
   }
+
+  for(let i = 0; i<num; i++){
+  result_tab.pages[1].addMonitor(PARAMS, 'particle_index', {
+    label: `V r${i+1}`,
+    interval: 100,  // update every 100 milliseconds
+  });
+}
 } 
 
 function draw() {
@@ -178,7 +177,6 @@ if(PARAMS.lights_on==true){
 for(let i = 0; i< num; i++){
  particle[i].show();
 }
-
   stroke("#999999");
   //line(PARAMS.P1_Pos.x * 50, PARAMS.P1_Pos.y * 50 * -1, PARAMS.P1_Pos.z * 50 * -1, PARAMS.P2_Pos.x * 50, PARAMS.P2_Pos.y * 50 * -1, PARAMS.P2_Pos.z * 50 * -1)
 }
