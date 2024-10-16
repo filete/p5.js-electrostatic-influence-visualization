@@ -13,6 +13,7 @@ Made in p5.js with [tweakpane](https://github.com/cocopon/tweakpane) support.
 - Intermediate calculous output.
 - Result output.
 - Vector visualization: from particle to particle, force direction, particle trajectory.
+- Particle position axis visualisation.
 
 ## Extras:
 - Workforce calculous.
