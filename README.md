@@ -8,11 +8,12 @@ Made in p5.js with [tweakpane](https://github.com/cocopon/tweakpane) support.
 - Particle color customization.
 - WEBGL light source.
 - Orthographic view (WIP, cant undo once toggled on).
-
-## To do:
 - Intermediate calculous output.
 - Result output.
+
+## To do:
 - Vector visualization: from particle to particle, force direction, particle trajectory.
+- Spatial position visualization.
 
 ## Extras:
 - Workforce calculous.
